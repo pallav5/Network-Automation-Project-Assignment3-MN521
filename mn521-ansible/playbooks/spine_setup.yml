@@ -70,7 +70,7 @@
         lines:
           - ip domain-name mn521.local
 
-    - name: Generate RSA key for SSH
+    - name: Generate RSA key for SSH #generated rsa
       ios_config:
         lines:
           - crypto key generate rsa modulus 1024
