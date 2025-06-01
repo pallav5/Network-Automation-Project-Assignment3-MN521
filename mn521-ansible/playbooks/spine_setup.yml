@@ -15,7 +15,7 @@
       set_fact:
         mgmt_ip: "{{ mgmt_ip_map[inventory_hostname] }}"
 
-    - name: Configure management IP on FastEthernet1/0 (for SSH)
+    - name: Configure management IP on FastEthernet1/0 (for SSH) #conf management for F1/0
       ios_config:
         lines:
           - ip address {{ mgmt_ip }} 255.255.255.192
